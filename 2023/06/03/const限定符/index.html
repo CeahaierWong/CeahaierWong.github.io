@@ -6,16 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>Archives | Ceahaier Wong</title>
+  <title>const限定符 | Ceahaier Wong</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="这个世界会好吗？等通知">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Ceahaier Wong">
-<meta property="og:url" content="http://example.com/archives/index.html">
+  <meta name="description" content="const限定符有时候我们希望定义一种变量，它的值不能被改变。可以使用const对变量的类型加以限定。 12345const int i &#x3D; 10;const char c &#x3D; &amp;#x27;#&amp;#x27;;&#x2F;&#x2F;i &#x3D; 20;		&#x2F;&#x2F; 错误：试图向const对象写值&#x2F;&#x2F;c &#x3D; &amp;#x27;$&amp;#x27;;		&#x2F;&#x2F; 错误：试图向const对象写值    初始化和constconst对象可以给普通对象赋">
+<meta property="og:type" content="article">
+<meta property="og:title" content="const限定符">
+<meta property="og:url" content="http://example.com/2023/06/03/const%E9%99%90%E5%AE%9A%E7%AC%A6/index.html">
 <meta property="og:site_name" content="Ceahaier Wong">
-<meta property="og:description" content="这个世界会好吗？等通知">
+<meta property="og:description" content="const限定符有时候我们希望定义一种变量，它的值不能被改变。可以使用const对变量的类型加以限定。 12345const int i &#x3D; 10;const char c &#x3D; &amp;#x27;#&amp;#x27;;&#x2F;&#x2F;i &#x3D; 20;		&#x2F;&#x2F; 错误：试图向const对象写值&#x2F;&#x2F;c &#x3D; &amp;#x27;$&amp;#x27;;		&#x2F;&#x2F; 错误：试图向const对象写值    初始化和constconst对象可以给普通对象赋">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2023-06-03T09:42:25.000Z">
+<meta property="article:modified_time" content="2023-06-04T12:30:31.674Z">
 <meta property="article:author" content="Ceahaier Wong">
+<meta property="article:tag" content="C++">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="Ceahaier Wong" type="application/atom+xml">
@@ -152,63 +155,124 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-const限定符" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2023" class="archive-year">2023</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2023/06/03/CeahaierWong%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E8%AF%B4%E6%98%8E/" class="archive-article-date">
-  	<time datetime="2023-06-03T09:44:03.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2023-06-03</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2023/06/03/CeahaierWong%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E8%AF%B4%E6%98%8E/">CeahaierWong个人博客说明</a>
+    <h1 class="article-title" itemprop="name">
+      const限定符
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2023/06/03/const%E9%99%90%E5%AE%9A%E7%AC%A6/" class="archive-article-date">
+        
+        <a href="/2023/06/03/const%E9%99%90%E5%AE%9A%E7%AC%A6/" class="archive-article-date">
   	<time datetime="2023-06-03T09:42:25.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2023-06-03</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2023/06/03/const%E9%99%90%E5%AE%9A%E7%AC%A6/">const限定符</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="const限定符"><a href="#const限定符" class="headerlink" title="const限定符"></a>const限定符</h1><p>有时候我们希望定义一种变量，它的值不能被改变。可以使用const对变量的类型加以限定。</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">const</span> <span class="type">int</span> i = <span class="number">10</span>;</span><br><span class="line"><span class="type">const</span> <span class="type">char</span> c = <span class="string">&#x27;#&#x27;</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">//i = 20;		// 错误：试图向const对象写值</span></span><br><span class="line"><span class="comment">//c = &#x27;$&#x27;;		// 错误：试图向const对象写值</span></span><br></pre></td></tr></table></figure>
 
-        <div class="article-info info-on-right">
-          
+
+
+<h2 id="初始化和const"><a href="#初始化和const" class="headerlink" title="初始化和const"></a>初始化和const</h2><p>const对象可以给普通对象赋值。毕竟赋值操作不会对const对象进行写值。</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">const</span> <span class="type">int</span> i = <span class="number">10</span>;</span><br><span class="line"><span class="type">int</span> a = i;</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="多文件共享同一个const对象"><a href="#多文件共享同一个const对象" class="headerlink" title="多文件共享同一个const对象"></a>多文件共享同一个const对象</h2><p>默认情况下，const对象仅在文件中有效。如果想要在多个文件中共享这个对象，定义和声明处可以使用extern关键字。</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// testA.cpp</span></span><br><span class="line"><span class="keyword">extern</span> <span class="type">const</span> <span class="type">int</span> i_a = <span class="number">512</span>;		<span class="comment">// 包含初始值，定义语句</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// testA.h</span></span><br><span class="line"><span class="keyword">extern</span> <span class="type">const</span> <span class="type">int</span> i_a;			<span class="comment">// 与testA.cpp文件中的i_a是同一个对象</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="const的引用"><a href="#const的引用" class="headerlink" title="const的引用"></a>const的引用</h2><p>可以把引用绑定到const对象上，就像绑定到其他对象一样，称之为对常量的引用。与普通引用的区别是，不能通过对常量的引用修改它所绑定的对象。</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> i = <span class="number">10</span>;</span><br><span class="line"><span class="type">const</span> <span class="type">int</span> j = <span class="number">20</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 常量引用可以绑定非常量对象，也可以绑定常量对象</span></span><br><span class="line"><span class="type">const</span> <span class="type">int</span>&amp; ai = i;	<span class="comment">// 常量引用绑定非常量对象</span></span><br><span class="line"><span class="type">const</span> <span class="type">int</span>&amp; aj = j;	<span class="comment">// 常量引用绑定常量对象</span></span><br><span class="line"></span><br><span class="line">ai = <span class="number">20</span>;			<span class="comment">// 错误：不能通过常量引用修改绑定的对象</span></span><br><span class="line">aj = <span class="number">50</span>;			<span class="comment">// 错误：不能通过常量引用修改绑定的对象</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="常量引用绑定非常量对象剖析"><a href="#常量引用绑定非常量对象剖析" class="headerlink" title="常量引用绑定非常量对象剖析"></a>常量引用绑定非常量对象剖析</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">double</span> dval = <span class="number">3.14</span>;</span><br><span class="line"><span class="type">const</span> <span class="type">int</span> &amp;ad = dval;	<span class="comment">// 使用int类型的常量引用绑定double类型非常量对象</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 编译器对上述代码的处理</span></span><br><span class="line"><span class="type">const</span> <span class="type">int</span> temp_val = dval;		<span class="comment">// 由double生成一个临时的整型常量</span></span><br><span class="line"><span class="type">const</span> <span class="type">int</span> &amp;ad = temp_val;		<span class="comment">// ad绑定这个临时量</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="指针和const"><a href="#指针和const" class="headerlink" title="指针和const"></a>指针和const</h1><h2 id="指向常量的指针"><a href="#指向常量的指针" class="headerlink" title="指向常量的指针"></a>指向常量的指针</h2><p>指向常量的指针（pointer to const），本身是一个指针，所以指向可以变，但是所指内存的值不能变。</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 指向常量的指针</span></span><br><span class="line"><span class="type">int</span> i_val1 = <span class="number">10</span>, i_val2 = <span class="number">20</span>;</span><br><span class="line"><span class="type">const</span> <span class="type">int</span>* p_tmp = &amp;i_val1;</span><br><span class="line"></span><br><span class="line"><span class="comment">//(*p_tmp) = 30;  错误，不允许改变所指内存的值</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 但是改变指针的值，即指针所指的地址。</span></span><br><span class="line">std::cout &lt;&lt; __LINE__ &lt;&lt; <span class="string">&quot;|&quot;</span> &lt;&lt; __FUNCTION__ &lt;&lt; <span class="string">&quot;|改变前：[&quot;</span> &lt;&lt; *p_tmp2 &lt;&lt; <span class="string">&quot;]&quot;</span> &lt;&lt; std::endl;</span><br><span class="line">p_tmp = &amp;i_val2;</span><br><span class="line">std::cout &lt;&lt; __LINE__ &lt;&lt; <span class="string">&quot;|&quot;</span> &lt;&lt; __FUNCTION__ &lt;&lt; <span class="string">&quot;|改变后：[&quot;</span> &lt;&lt; *p_tmp2 &lt;&lt; <span class="string">&quot;]&quot;</span> &lt;&lt; std::endl;</span><br></pre></td></tr></table></figure>
+
+<p>运行结果：</p>
+<p>13|main|改变前：[10]<br>15|main|改变后：[20]</p>
+<h2 id="const指针（常量指针）"><a href="#const指针（常量指针）" class="headerlink" title="const指针（常量指针）"></a>const指针（常量指针）</h2><p>常量指针（const pointer），是一个指针，但是被const修饰了，变成了常量指针。指向不能变，但是所指内存的值可以变。</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 常量指针</span></span><br><span class="line"><span class="type">int</span> i_val1 = <span class="number">10</span>, i_val2 = <span class="number">20</span>;</span><br><span class="line"><span class="type">int</span>* <span class="type">const</span> p_tmp = &amp;i_val1;</span><br><span class="line"></span><br><span class="line"><span class="comment">//p_tmp = &amp;i_val1;  错误，不允许改变指向</span></span><br><span class="line"></span><br><span class="line">std::cout &lt;&lt; __LINE__ &lt;&lt; <span class="string">&quot;|&quot;</span> &lt;&lt; __FUNCTION__ &lt;&lt; <span class="string">&quot;|改变前：[&quot;</span> &lt;&lt; *p_tmp &lt;&lt; <span class="string">&quot;]&quot;</span> &lt;&lt; std::endl;</span><br><span class="line">*p_tmp = <span class="number">30</span>;</span><br><span class="line">std::cout &lt;&lt; __LINE__ &lt;&lt; <span class="string">&quot;|&quot;</span> &lt;&lt; __FUNCTION__ &lt;&lt; <span class="string">&quot;|改变后：[&quot;</span> &lt;&lt; *p_tmp &lt;&lt; <span class="string">&quot;]&quot;</span> &lt;&lt; std::endl;</span><br></pre></td></tr></table></figure>
+
+<p>运行结果：</p>
+<p>13|main|改变前：[10]<br>15|main|改变后：[30]</p>
+<h2 id="指向常量的const指针"><a href="#指向常量的const指针" class="headerlink" title="指向常量的const指针"></a>指向常量的const指针</h2><p>本身是一个指针，但是被const修饰了，所以不能改变指向。而指向的又是一个常量对象，所以通过指针修改指向对象的值也是不被允许的。</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> i_val1 = <span class="number">10</span>, i_val2 = <span class="number">20</span>;</span><br><span class="line"><span class="type">const</span> <span class="type">int</span>* <span class="type">const</span> p_tmp = &amp;i_val1;</span><br><span class="line"></span><br><span class="line"><span class="comment">//p_tmp = &amp;i_val1;  //错误：不允许改变指向</span></span><br><span class="line"><span class="comment">//*p_tmp = 30;  	//错误：不允许改变所指对象的值</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="顶层const和底层const"><a href="#顶层const和底层const" class="headerlink" title="顶层const和底层const"></a>顶层const和底层const</h1><h2 id="顶层const"><a href="#顶层const" class="headerlink" title="顶层const"></a>顶层const</h2><p>顶层const（top-level const）。表示指针本身是个常量。</p>
+<p>更一般的，顶层const可以表示任意的对象是个常量，这一定对任何数据类型都适用，例如：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> i = <span class="number">0</span>;</span><br><span class="line"><span class="type">int</span>* count p1 = &amp;i;		<span class="comment">// 常量指针，顶层const</span></span><br><span class="line"><span class="type">const</span> <span class="type">int</span> ci = <span class="number">42</span>;		<span class="comment">// 顶层const</span></span><br><span class="line"><span class="keyword">constexpr</span> <span class="type">int</span> *q = <span class="literal">nullptr</span>;		<span class="comment">// 顶层const。常量指针。初始化的时候必须是nullptr、0或者是存储于某个固定地址中的对象。</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="底层const"><a href="#底层const" class="headerlink" title="底层const"></a>底层const</h2><p>底层const（low-level const）。表示指针所指的对象是个常量。<strong>用于声明引用的const都是底层const</strong></p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> i = <span class="number">0</span>;</span><br><span class="line"><span class="type">const</span> <span class="type">int</span> *p2 = &amp;i;		<span class="comment">// 指向常量的指针，底层const</span></span><br><span class="line"><span class="type">const</span> <span class="type">int</span> &amp;r = ci;		<span class="comment">// 用于声明引用的const都是底层const</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="既有顶层const，也有底层const"><a href="#既有顶层const，也有底层const" class="headerlink" title="既有顶层const，也有底层const"></a>既有顶层const，也有底层const</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">const</span> <span class="type">int</span>* <span class="type">const</span> p3 = p2;	<span class="comment">// 靠右的const是顶层const，靠左的是底层const</span></span><br></pre></td></tr></table></figure>
+
+
+
+<p><strong>当执行对象的拷贝操作时，拷入和拷出的对象必须是具有相同的底层const资格，或者两个对象的数据类型必须能够转换。一般来说，非常量可以转换成常量，反之不行</strong>：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> i = <span class="number">0</span>;</span><br><span class="line"><span class="type">int</span>* <span class="type">const</span> p1 = &amp;i;</span><br><span class="line"><span class="type">const</span> <span class="type">int</span> ci = <span class="number">42</span>;</span><br><span class="line"><span class="type">const</span> <span class="type">int</span> *p2 = &amp;ci;</span><br><span class="line"><span class="type">const</span> <span class="type">int</span> *<span class="type">const</span> p3 = p2;</span><br><span class="line"><span class="type">const</span> <span class="type">int</span> &amp;r = ci;</span><br><span class="line"></span><br><span class="line"><span class="comment">//int *p = p3;	//错误：p3包含底层const含义，而p没有</span></span><br><span class="line">p2 = p3;		<span class="comment">//正确：p2和p3都是底层const。p3既有顶层const也有底层const，但实际上顶层const一般来说不影响，毕竟被拷贝的值本身就不会改变</span></span><br><span class="line">p2 = &amp;i;		<span class="comment">//正确：int*能够转换成const int*</span></span><br><span class="line"><span class="comment">//int &amp;r = ci;	//错误：普通的int&amp;不能绑定到int常量上。如果普通int&amp;能够绑定，那么就能通过int&amp;改变常量，这显然不符合常量的要求。</span></span><br><span class="line"><span class="type">const</span> <span class="type">int</span> &amp;r2 = i;	<span class="comment">//正确：const int &amp;可以绑定到一个普通int上</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="constexpr变量"><a href="#constexpr变量" class="headerlink" title="constexpr变量"></a>constexpr变量</h1><p>C++11新标准规定，允许将变量声明为constexpr类型以便由编译器来验证变量是否是一个常量表达式。声明为constexpr的变量一定是一个常量，而且必须是常量表达式（<strong>指值不会改变并且在编译过程就能得到计算结果的表达式</strong>）。</p>
+<p><strong>一般来说，认定一个变量是一个常量表达式的时候，最好声明为constexpr</strong></p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">constexpr</span> <span class="type">int</span> mf = <span class="number">20</span>;		<span class="comment">//20是个常量表达式</span></span><br><span class="line"><span class="keyword">constexpr</span> <span class="type">int</span> limit = mf + <span class="number">1</span>;	<span class="comment">//mf+1是常量表达式</span></span><br><span class="line"><span class="keyword">constexpr</span> <span class="type">int</span> sz = <span class="built_in">size</span>();		<span class="comment">//只有当size是一个constexpr函数时才是一条正确的声明语句</span></span><br></pre></td></tr></table></figure>
+
+
+
+<p><strong>算术类型、引用、指针都属于字面值类型。能被声明为constexpr。但是一个constexpr指针的初始化必须是nullptr或者0、或者是存储于某个固定地址中的对象。</strong></p>
+<h2 id="指针和constexpr"><a href="#指针和constexpr" class="headerlink" title="指针和constexpr"></a>指针和constexpr</h2><p>定义于函数体内的变量，地址不是固定的，因此constexpr指针不能指向这些变量。定义于所有函数体外的变量，地址是固定的，所以constexpr指针可以指向。</p>
+<p>在constexpr声明中如果定义了一个指针，限定符constexpr仅对指针有效，与指针所指的值的对象无关。</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">const</span> <span class="type">int</span> * p = <span class="literal">nullptr</span>;		<span class="comment">//p是一个指向整型常量的指针（本质只是个普通指针）</span></span><br><span class="line"><span class="keyword">constexpr</span> <span class="type">int</span> *q = <span class="literal">nullptr</span>;		<span class="comment">//q是一个指向整型的常量指针（本质是常量指针）</span></span><br></pre></td></tr></table></figure>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -220,19 +284,110 @@
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2023/06/03/const%E9%99%90%E5%AE%9A%E7%AC%A6/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/2023/06/03/CeahaierWong%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E8%AF%B4%E6%98%8E/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          CeahaierWong个人博客说明
+        
+      </div>
+    </a>
   
   
-    </div></section>
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+  
+  
   
 
-    
+  
+
+  
+
+  
 
 
           </div>
@@ -255,8 +410,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
